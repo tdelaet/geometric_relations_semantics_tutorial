@@ -1,0 +1,11 @@
+<stack>
+  <description brief="geometric_relations_semantics_tutorial">geometric_relations_semantics_tutorial</description>
+  <author>Maintained by Tinne De Laet</author>
+  <license>LGPL/BSD,LGPLv2.1 / BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/geometric_relations_semantics_tutorial</url>
+  <depend stack="geometric_relations_semantics" /> 
+  <depend stack="ros" />
+  <depend stack="ros_comm" />
+  <depend stack="orocos_toolchain" />
+</stack>
