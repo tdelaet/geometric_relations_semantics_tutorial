@@ -1,0 +1,16 @@
+<package>
+  <description brief="geometric_relations_semantics_tutorial_ros_nodes">
+
+     geometric_relations_semantics_tutorial_ros_nodes
+
+  </description>
+  <author>Tinne De Laet</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/geometric_relations_semantics_tutorial_ros_nodes</url>
+  <depend package="geometric_relations_semantics_tutorial_orocos_components"/>
+  <depend package="geometric_semantics_tf_msgs_conversions"/>
+
+</package>
+
+
