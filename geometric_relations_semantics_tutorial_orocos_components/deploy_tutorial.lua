@@ -25,7 +25,8 @@ subscriberComponent= depl:getPeer("subscriber")
 publisherComponent= depl:getPeer("publisher")
 
 -- create ros topics
-depl:stream("publisher.outPortPose", rtt.provides("ros"):topic("/geometric_semantics/pose"))
+depl:stream("publisher.outPortPose", rtt.provides("ros"):topic("/geometric_semantics_tutorial/pose"))
+depl:stream("subscriber.inPortPose", rtt.provides("ros"):topic("/geometric_semantics_tutorial/pose_result"))
 
 -- read properties
 publisherComponent:provides("marshalling"):readProperties("props_publisher.cpf")
@@ -38,9 +39,11 @@ subscriberComponent:configure()
 -- create activity for producer: period=1, priority=0,
 -- schedtype=ORO_SCHED_OTHER (1).
 depl:setActivity("publisher", 1, 0, rtt.globals.ORO_SCHED_RT)
+depl:setActivity("subscriber", 1, 0, rtt.globals.ORO_SCHED_RT)
  
 -- raise loglevel
-rtt.setLogLevel("Error")
+rtt.setLogLevel("Debug")
 
 -- start
 publisherComponent:start()
+subscriberComponent:start()

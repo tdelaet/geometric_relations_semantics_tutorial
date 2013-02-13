@@ -17,13 +17,13 @@
            <description>Part</description>
            <simple name="name" type="string"><description>Part</description><value>b2</value></simple>
         </struct>
-        <struct name="reference orientation frame" type="Point">
+        <struct name="reference orientation frame" type="OrientationFrame">
            <description>Part</description>
            <simple name="name" type="string"><description>Part</description><value>b2</value></simple>
         </struct>
         <struct name="Body" type="Body">
            <description>Part</description>
-           <simple name="name" type="string"><description>Part</description><value>E2</value></simple>
+           <simple name="name" type="string"><description>Part</description><value>a2</value></simple>
         </struct>
         <struct name="reference Body" type="Body">
            <description>Part</description>

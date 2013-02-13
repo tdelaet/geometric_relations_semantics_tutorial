@@ -85,6 +85,35 @@ class Geometric_semantics_component_tutorial_subscriber
         {
             object_PoseTF= conversions_geometric_msgs::PoseTFFromMsg(object_PoseTF_msg);
             object_PoseTFCoordinatesSemantics = object_PoseTF.getSemantics();
+
+            if( object_PoseTFCoordinatesSemantics.getPoint().getName() != propPoseSemantics_expected.getPoint().getName() )
+            {
+                log(Error) << "The received pose with semantics " << object_PoseTFCoordinatesSemantics << " does not have expected point " << propPoseSemantics_expected.getPoint() <<endlog();
+            }
+            if( object_PoseTFCoordinatesSemantics.getOrientationFrame().getName() != propPoseSemantics_expected.getOrientationFrame().getName() )
+            {
+                log(Error) << "The received pose with semantics " << object_PoseTFCoordinatesSemantics << " does not have expected orientation frame " << propPoseSemantics_expected.getOrientationFrame() <<endlog();
+            }
+            if( object_PoseTFCoordinatesSemantics.getBody().getName() != propPoseSemantics_expected.getBody().getName() )
+            {
+                log(Error) << "The received pose with semantics " << object_PoseTFCoordinatesSemantics << " does not have expected body " << propPoseSemantics_expected.getBody() <<endlog();
+            }
+            if( object_PoseTFCoordinatesSemantics.getRefPoint().getName() != propPoseSemantics_expected.getRefPoint().getName() )
+            {
+                log(Error) << "The received pose with semantics " << object_PoseTFCoordinatesSemantics << " does not have expected reference point " << propPoseSemantics_expected.getRefPoint() <<endlog();
+            }
+            if( object_PoseTFCoordinatesSemantics.getRefOrientationFrame().getName() != propPoseSemantics_expected.getRefOrientationFrame().getName() )
+            {
+                log(Error) << "The received pose with semantics " << object_PoseTFCoordinatesSemantics << " does not have expected reference orientation frame " << propPoseSemantics_expected.getRefOrientationFrame() <<endlog();
+            }
+            if( object_PoseTFCoordinatesSemantics.getRefBody().getName() != propPoseSemantics_expected.getRefBody().getName() )
+            {
+                log(Error) << "The received pose with semantics " << object_PoseTFCoordinatesSemantics << " does not have expected reference body " << propPoseSemantics_expected.getRefBody() <<endlog();
+            }
+            if( object_PoseTFCoordinatesSemantics.getCoordinateFrame().getName() != propPoseSemantics_expected.getCoordinateFrame().getName() )
+            {
+                log(Error) << "The received pose with semantics " << object_PoseTFCoordinatesSemantics << " does not have expected coordinate frame " << propPoseSemantics_expected.getCoordinateFrame() <<endlog();
+            }
         }
         log(Debug) << "Geometric_semantics_component_tutorial_subscriber executes updateHook !" <<endlog();
     }
