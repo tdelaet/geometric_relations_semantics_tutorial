@@ -1,0 +1,19 @@
+<package>
+  <description brief="geometric_relations_semantics_tutorial_orocos_components">
+  This package contains the orocos components of the tutorial
+  </description>
+  <author>tdelaet</author>
+  <review status="unreviewed" notes=""/>
+  <license>LGPLv2.1 / BSD</license>
+  <author>Tinne De Laet</author>
+  <depend package="rtt" />
+  <depend package="geometric_semantics" />
+  <depend package="geometric_semantics_orocos_typekit" />
+  <depend package="geometric_semantics_orocos_typekit_kdl" /> 
+  <depend package="rtt_geometric_semantics_msgs"/>
+  <depend package="rtt_geometric_semantics_tf_msgs"/>
+  <depend package="geometric_semantics_tf_msgs_conversions"/>
+  <depend package="tf"/>
+</package>
+
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "cpf.dtd">
+<properties>
+  <struct name="propPose" type="/geometric_semantics_tf_msgs/PoseTF">
+     <description>Property for Pose.</description>
+     <struct name="poseCoordinatesSemantics" type="/geometric_semantics_msgs/PoseCoordinatesSemantics">
+        <description>Part</description>
+        <struct name="poseSemantics" type="/geometric_semantics_msgs/PoseSemantics">
+           <description>Part</description>
+           <struct name="point" type="/geometric_semantics_msgs/Point">
+              <description>Part</description>
+              <simple name="name" type="string"><description>Part</description><value>a</value></simple>
+           </struct>
+           <struct name="orientationFrame" type="/geometric_semantics_msgs/OrientationFrame">
+              <description>Part</description>
+              <simple name="name" type="string"><description>Part</description><value>a</value></simple>
+           </struct>
+           <struct name="referencePoint" type="/geometric_semantics_msgs/Point">
+              <description>Part</description>
+              <simple name="name" type="string"><description>Part</description><value>b</value></simple>
+           </struct>
+           <struct name="referenceOrientationFrame" type="/geometric_semantics_msgs/OrientationFrame">
+              <description>Part</description>
+              <simple name="name" type="string"><description>Part</description><value>b</value></simple>
+           </struct>
+           <struct name="body" type="/geometric_semantics_msgs/Body">
+              <description>Part</description>
+              <simple name="name" type="string"><description>Part</description><value>A</value></simple>
+           </struct>
+           <struct name="referenceBody" type="/geometric_semantics_msgs/Body">
+              <description>Part</description>
+              <simple name="name" type="string"><description>Part</description><value>B</value></simple>
+           </struct>
+        </struct>
+        <struct name="coordinateFrame" type="/geometric_semantics_msgs/OrientationFrame">
+           <description>Part</description>
+           <simple name="name" type="string"><description>Part</description><value>b</value></simple>
+        </struct>
+     </struct>
+     <struct name="poseCoordinates" type="/geometric_semantics_tf_msgs/PoseCoordinatesTF">
+        <description>Part</description>
+        <struct name="poseCoordinates" type="/geometry_msgs/Pose">
+           <description>Part</description>
+           <struct name="position" type="/geometry_msgs/Point">
+              <description>Part</description>
+              <simple name="x" type="double"><description>Part</description><value>1</value></simple>
+              <simple name="y" type="double"><description>Part</description><value>2</value></simple>
+              <simple name="z" type="double"><description>Part</description><value>0</value></simple>
+           </struct>
+           <struct name="orientation" type="/geometry_msgs/Quaternion">
+              <description>Part</description>
+              <simple name="x" type="double"><description>Part</description><value>0</value></simple>
+              <simple name="y" type="double"><description>Part</description><value>0</value></simple>
+              <simple name="z" type="double"><description>Part</description><value>1</value></simple>
+              <simple name="w" type="double"><description>Part</description><value>1</value></simple>
+           </struct>
+        </struct>
+     </struct>
+  </struct>
+</properties>

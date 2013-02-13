@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "cpf.dtd">
+<properties>
+  <struct name="propPoseSemantics_expected" type="PoseCoordinatesSemantics">
+     <description>Property of expected semantics of received Pose.</description>
+     <struct name="PoseSemantics" type="PoseSemantics">
+        <description>Part</description>
+        <struct name="point" type="Point">
+           <description>Part</description>
+           <simple name="name" type="string"><description>Part</description><value>e2</value></simple>
+        </struct>
+        <struct name="orientation frame" type="OrientationFrame">
+           <description>Part</description>
+           <simple name="name" type="string"><description>Part</description><value>e2</value></simple>
+        </struct>
+        <struct name="reference point" type="Point">
+           <description>Part</description>
+           <simple name="name" type="string"><description>Part</description><value>b2</value></simple>
+        </struct>
+        <struct name="reference orientation frame" type="Point">
+           <description>Part</description>
+           <simple name="name" type="string"><description>Part</description><value>b2</value></simple>
+        </struct>
+        <struct name="Body" type="Body">
+           <description>Part</description>
+           <simple name="name" type="string"><description>Part</description><value>E2</value></simple>
+        </struct>
+        <struct name="reference Body" type="Body">
+           <description>Part</description>
+           <simple name="name" type="string"><description>Part</description><value>B2</value></simple>
+        </struct>
+     </struct>
+     <struct name="Coordinate frame" type="OrientationFrame">
+        <description>Part</description>
+        <simple name="name" type="string"><description>Part</description><value>b2</value></simple>
+     </struct>
+  </struct>
+</properties>
