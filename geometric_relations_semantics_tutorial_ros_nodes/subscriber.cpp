@@ -40,17 +40,7 @@ geometric_semantics_tf_msgs::PoseTF msg_PoseTF_out;
 geometric_semantics::Pose<tf::Pose>   doGeometricSemanticsCalculations(const geometric_semantics::Pose<tf::Pose> pose)
 {
     std::cout << "=============================================" << std::endl;
-    T_interim5 = T_interim3.inverse2();
-    std::cout << "T_interim5 " <<T_interim5.getSemantics() << std::endl;
-    T_interim6 = compose(T_interim5,T_interim4);
-    std::cout << "T_interim6 " <<T_interim6.getSemantics() << std::endl;
-    T_interim7 = compose(T_interim6,T_interim2);
-    std::cout << "T_interim7 " <<T_interim7.getSemantics() << std::endl;
-    T_interim8 = compose(T_interim7,T_in);
-    std::cout << "T_interim8 " <<T_interim8.getSemantics() << std::endl;
-    T_interim9 = T_interim1.inverse2();
-    std::cout << "T_interim9 " <<T_interim9.getSemantics() << std::endl;
-    T_out = compose(T_interim8,T_interim9);
+    std::cout << "Put here the code for calculating the Pose({e2}|E2,{b2}|B2,[b2])" << std::endl;
     std::cout << "=============================================" << std::endl;
     return T_out;
 }
