@@ -1,3 +1,6 @@
+require("rttlib")
+rttlib.color=true
+
 -- deploy_app.lua
 tc = rtt.getTC()
 depl = tc:getPeer("Deployer")
